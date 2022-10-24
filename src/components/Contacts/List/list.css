@@ -1,0 +1,29 @@
+.addedlist{
+    margin-top: 2rem;
+    border-collapse:collapse;
+   
+    width: 35rem;
+    font-size: 1.5rem;
+   
+
+}
+th{
+    background-color: rgb(26, 35, 105);
+    border: 1px solid black;
+    text-align: start;
+    padding: 0.5rem;
+    color: white;
+}
+tr, td {
+    border: 1px solid black;
+    text-align: start;
+   padding: 0.5rem;
+   
+
+}
+tr:nth-child(even){
+    background-color: rgb(197, 197, 223);
+}
+tr:nth-child(odd){
+    background-color: rgb(139, 139, 227);
+}
