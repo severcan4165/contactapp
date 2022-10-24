@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./form.css";
 import List from "../List/List.jsx";
 
@@ -11,7 +11,7 @@ function Form({ contact, setContact }) {
 
 
   const [filterQuery, setFilterQuery] = useState("");
-  const [filteredList, setFilteredList] = useState([]);
+  // const [filteredList, setFilteredList] = useState([]);
 
   const handleChange = (e) => {
     setInput({...input, [e.target.name]: e.target.value });
@@ -38,7 +38,7 @@ function Form({ contact, setContact }) {
 
   const handleFilter = (e) => {
     setFilterQuery(e.target.value);
-    setFilteredList(filteredArray)
+    // setFilteredList(filteredArray)
   };
 
   filteredArray  = contact?.filter(item => {
@@ -48,16 +48,7 @@ function Form({ contact, setContact }) {
     )
    
   });
-  // const updateFilterlist = (filteredArray) =>{
-  //   ;
-  // }
-
-
-  
-
-
-  
-  // console.log(filteredArray);
+ 
 
 
 
@@ -80,16 +71,6 @@ function Form({ contact, setContact }) {
         
         
        
-          {/* {filteredArray?.length >0 && (
-            filteredArray.map((item,index)=>{
-              return(
-                <ul key={index}>
-                <li >{item.fullname}</li>
-                <li >{item.phone}</li>
-                </ul>
-              )
-            })
-          )} */}
 
        
         {/* ----------- input Name and Phone ---------- */}
