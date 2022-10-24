@@ -22,6 +22,9 @@ function Form({ contact, setContact }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(input.fullname === "" || input.phone === ""){
+      return alert("Please fill  phone and name areas correctly")
+    }
     // console.log(input);
     setContact([...contact, {...input}]);
     console.log(contact);
