@@ -97,7 +97,7 @@ function Form({ contact, setContact }) {
           />
         </div>
     {/* ----------- Added Name and Phone List ---------- */}
-        <List contact = {contact} setContact = {setContact} input = {input} filteredArray = {filteredArray} />
+        <List  filteredArray = {filteredArray} />
 
 
          {/* ----------- Button ---------- */}
