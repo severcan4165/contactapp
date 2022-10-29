@@ -26,7 +26,7 @@ function Form({ contact, setContact }) {
       return alert("Please fill  phone and name areas correctly")
     }
     // console.log(input);
-    setContact([...contact, {...input}]);
+    setContact([...contact, input]);
     console.log(contact);
     setInput({
       fullname: "",
