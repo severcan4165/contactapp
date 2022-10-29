@@ -1,7 +1,7 @@
 import React from 'react'
 import "./list.css"
 
-function List({contact, setContact, filteredArray}){
+function List({filteredArray}){
   return (
     <>
      {filteredArray.length>0 ? 
