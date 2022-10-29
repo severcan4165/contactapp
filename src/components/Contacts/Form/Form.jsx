@@ -27,7 +27,7 @@ function Form({ contact, setContact }) {
     }
     // console.log(input);
     setContact([...contact, input]);
-    console.log(contact);
+    // console.log(contact);
     setInput({
       fullname: "",
       phone : ""
